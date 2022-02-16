@@ -1,0 +1,15 @@
+.todo__filters {
+  &-item {
+    cursor: pointer;
+    margin: 0 4px;
+  }
+
+  .active {
+    color: #e510a1;
+    text-shadow: 0 0 4px #d3d3d3;
+  }
+
+  input {
+    display: none;
+  }
+}
