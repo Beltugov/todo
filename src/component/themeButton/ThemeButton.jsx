@@ -1,5 +1,5 @@
 import React from 'react';
-import "./themeButton.scss"
+import "./ThemeButton.scss"
 import sun from "../../assets/sun.png";
 import moon from "../../assets/moon.png";
 

@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import "./todoList.scss"
+import "./TodoList.scss"
 import {ContextApp} from "../../App";
 
 const TodoList = (props) => {
@@ -74,7 +74,7 @@ const TodoList = (props) => {
                })
                : todo.sort((a, b) => a.order - b.order).map((item) => {
                   return (
-                     <li className={"todo__list-item " + (item.completed ? "completed" : "")} key={item.id}
+                     <li className={"todo__list-item " + (item.completed && "completed" )} key={item.id}
                          draggable={true}
                          onDragStart={e => handleDragStart(e, item)}
                          onDragLeave={e => handleDragEnd(e)}
@@ -85,7 +85,7 @@ const TodoList = (props) => {
                                defaultChecked={item.completed}
                                onChange={changeCheck}/><label
                         htmlFor={item.id}>
-                        <div className={"checkbox " + (item.completed ? "checked" : "")}/>
+                        <div className={"checkbox " + (item.completed && "checked" )}/>
                         {item.text}</label></li>)
                })
          }

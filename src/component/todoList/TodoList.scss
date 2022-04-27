@@ -1,5 +1,5 @@
 .todo__list {
-  .todo__list-item {
+  &-item {
     padding: 8px 16px;
     border-bottom: 1px #d3d3d3 solid;
 
@@ -24,6 +24,10 @@
         background-size: 80%;
       }
     }
+  }
+  .completed {
+    text-decoration: line-through;
+    text-decoration-color: #e510a1;;
   }
 }
 

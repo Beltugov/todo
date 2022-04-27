@@ -6,9 +6,9 @@
   border: none;
   cursor: pointer;
   overflow: hidden;
-}
+  border-radius: 50%;
 
-// Анимация переключение между темной и светлой темой
+}
 
 .light {
   .theme-button {
